@@ -19,14 +19,16 @@ collections:
     create: true
     slug: "state-{{slug}}"
     fields:
-      - {label: "Name", name: "title", widget: "string"}
+      - label: Name
+        name: title
+        widget: string
       - label: Cities
         required: false
         name: cities
         widget: relation
         collection: us_city
         multiple: true
-        value_field: "slug"
+        value_field: "{{slug}}"
         search_fields: ["title"]
         display_field: ["title"]
   - name: us_city
@@ -35,14 +37,16 @@ collections:
     create: true
     slug: "city-{{slug}}"
     fields:
-      - {label: "Name", name: "title", widget: "string"}
+      - label: Name
+        name: title
+        widget: string
       - label: State
         required: false
         name: state
         widget: relation
         collection: us_state
         multiple: false
-        value_field: "slug"
+        value_field: "{{slug}}"
         search_fields: ["title"]
         display_fields: ["title"]
   - name: "blog"
