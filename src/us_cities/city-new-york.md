@@ -1,4 +1,4 @@
 ---
 title: New York
-state: ""
+state: "state-new-york"
 ---

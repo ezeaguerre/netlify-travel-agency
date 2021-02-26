@@ -1,4 +1,4 @@
 ---
 title: Los Angeles
-state: ""
+state: "state-california"
 ---
