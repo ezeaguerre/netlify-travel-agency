@@ -1,4 +1,4 @@
 ---
 title: Aquarium
-parent: destination-type-musem
+parent: destination-type-museum
 ---
