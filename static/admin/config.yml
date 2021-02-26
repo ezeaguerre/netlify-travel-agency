@@ -107,6 +107,7 @@ collections:
         widget: markdown
       - label: Destinations
         name: destinations
+        multiple: true
         widget: relation
         collection: destination
         value_field: "{{slug}}"
