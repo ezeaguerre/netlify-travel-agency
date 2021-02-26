@@ -49,6 +49,76 @@ collections:
         value_field: "{{slug}}"
         search_fields: ["title"]
         display_fields: ["title"]
+  - name: destination_type
+    label: Destination Type
+    folder: src/destination_types
+    create: true
+    slug: "destination-type-{{slug}}"
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Parent
+        name: parent
+        widget: relation
+        collection: destination_type
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+  - name: destination
+    label: Destination
+    folder: src/destinations
+    create: true
+    slug: "destination-{{slug}}"
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Featured Image
+        name: featured_image
+        widget: image
+      - label: Description
+        name: description
+        widget: markdown
+      - label: Destination Type
+        name: destination_type
+        widget: relation
+        collection: destination_type
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+  - name: travel_guide
+    label: Travel Guide
+    folder: src/travel_guides
+    create: true
+    slug: "travel-guide-{{slug}}"
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Featured Image
+        name: featured_image
+        widget: image
+      - label: Overview
+        name: overview
+        widget: markdown
+      - label: Content
+        name: content
+        widget: markdown
+      - label: Destinations
+        name: destinations
+        widget: relation
+        collection: destination
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+      - label: City
+        name: city
+        widget: relation
+        collection: us_city
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
