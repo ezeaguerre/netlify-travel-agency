@@ -12,6 +12,8 @@ content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
   dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
   nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
   Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-destinations: destination-al-hirschfeld-theatre
+destinations:
+  - destination-al-hirschfeld-theatre
+  - destination-museum-of-natural-history
 city: city-new-york
 ---
