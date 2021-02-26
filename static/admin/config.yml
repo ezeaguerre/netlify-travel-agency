@@ -26,9 +26,9 @@ collections:
         widget: relation
         collection: us_city
         multiple: true
-        value_field: slug
-        search_fields: [title]
-        display_field: [title]
+        value_field: "slug"
+        search_fields: ["title"]
+        display_field: ["title"]
   - name: us_city
     label: US City
     folder: src/us_cities
@@ -42,9 +42,9 @@ collections:
         widget: relation
         collection: us_state
         multiple: false
-        value_field: slug
-        search_fields: [title]
-        display_fields: [title]
+        value_field: "slug"
+        search_fields: ["title"]
+        display_fields: ["title"]
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
